@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VS Code Basics</title>
+    <style>
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 2.1rem;
+        margin: 4rem auto;
+      }
+
+      table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 0 4rem 0 4rem;
+      }
+      caption {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      thead {
+        background-color: #bbb;
+      }
+
+      tfoot {
+        background-color: #ccc;
+      }
+
+      thead th {
+        border-bottom: 1px solid #ccc;
+      }
+      tfoot th {
+        border-top: 1px solid #ccc;
+      }
+      table td {
+        font-size: 13px;
+        text-align: left;
+        padding: 5px;
+        height: 30px;
+        font-size: 2rem;
+      }
+
+      table tbody td {
+        text-transform: lowercase;
+      }
+
+      table tbody tr:hover {
+        background-color: #ccc;
+      }
+
+      table tbody tr:hover td:hover {
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" width="100%">
+      <caption>
+        VS Code Basics
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>code .</td>
+        <td>open vs code</td>
+      </tr>
+
+      <tr>
+        <td>code -version</td>
+        <td>version</td>
+      </tr>
+
+      <tr>
+        <td>(select word)+(cntrl + D)+(left/right arrows)</td>
+        <td>select next occurency</td>
+      </tr>
+
+      <tr>
+        <td>alt + click at different places</td>
+        <td>write the samething at different places</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + B</td>
+        <td>open close sidebar</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + W</td>
+        <td>closes file/window</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + N</td>
+        <td>create a new file/window</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + ~</td>
+        <td>open / closes terminal</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + right or left arrows</td>
+        <td>goes to the end/beggining of the word</td>
+      </tr>
+
+      <tr>
+        <td>shift + right or left arrows</td>
+        <td>selects the same letter with several occurencies</td>
+      </tr>
+
+      <tr>
+        <td>alt + up or down arrows</td>
+        <td>moves sellected text up or down</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + right or left brackets or (tab & shift/tab)</td>
+        <td>indentation</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + P (name of the file or part of the name of the file)</td>
+        <td>find a file</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + P > format document</td>
+        <td>format document with prettier extension</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + c / cntrl + v (with NO selection)</td>
+        <td>will copy and paste the whole line</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + F</td>
+        <td>regular search</td>
+      </tr>
+
+      <tr>
+        <td>cntrl + shift + F</td>
+        <td>search inside all files</td>
+      </tr>
+
+      <tr>
+        <td>F12</td>
+        <td>shows mozzila s element or attribute definition</td>
+      </tr>
+
+      <tr>
+        <td>& + any letter</td>
+        <td>search for character entity code and visualize it</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <table border="1" width="100%">
+      <caption>
+        VS Code Basic Extensions
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Extension Name</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>Color Highlight – Sergii Naumov</td>
+        <td>highlights the color</td>
+      </tr>
+
+      <tr>
+        <td>ES Lint (JS) – Dirk Baeumer</td>
+        <td>code warning, errors & suggestion.</td>
+      </tr>
+
+      <tr>
+        <td>Babel ES6/ES7 – dzannotti</td>
+        <td>syntax</td>
+      </tr>
+
+      <tr>
+        <td>ES7 React/Redux/GraphQL/React-Native snippets Dsznajder</td>
+        <td>React Snippets</td>
+      </tr>
+
+      <tr>
+        <td>JavaScript (ES6) code snippets – charalampos karypidis</td>
+        <td>JS Snippets</td>
+      </tr>
+
+      <tr>
+        <td>Bootstrap V4 snippet – Zaczero</td>
+        <td>bootstrap snippets (tips)</td>
+      </tr>
+
+      <tr>
+        <td>IntelliSense for CSS class names in HTML – Zignd</td>
+        <td>intelisense (self complettition) for bootstrap</td>
+      </tr>
+
+      <tr>
+        <td>Debugger for Chrome – Microsoft</td>
+        <td>Debugger</td>
+      </tr>
+
+      <tr>
+        <td>Debugger for Firefox</td>
+        <td>Debugger</td>
+      </tr>
+
+      <tr>
+        <td>Prettier – code formartter</td>
+        <td>Code formatter <small>file .vs for react</small></td>
+      </tr>
+
+      <tr>
+        <td>Bracket Pair Colorizer – CoenraadS</td>
+        <td>colorized brackets</td>
+      </tr>
+
+      <tr>
+        <td>Live Server – Ritwick Dey</td>
+        <td>visualizar html</td>
+      </tr>
+
+      <tr>
+        <td>Vscode – icons – Icons Team</td>
+        <td>Iconos .html, .css, etc</td>
+      </tr>
+
+      <tr>
+        <td>Winter is Coming – John Papa</td>
+        <td>Color theme</td>
+      </tr>
+
+      <tr>
+        <td>Encode Decode – Mitch Denny</td>
+        <td>accent <small> (selecciona + cmd-alt-c )</small></td>
+      </tr>
+
+      <tr>
+        <td>Settings Sync – Shan Khan</td>
+        <td>could backup</td>
+      </tr>
+
+      <tr>
+        <td>
+          SASS – Indented Sass syntax Highlighting, Autocomplete & Formatter
+        </td>
+        <td>sass syntax</td>
+      </tr>
+
+      <tr>
+        <td>Live Sass Compiler – Ritwick Dey</td>
+        <td>sass compiler</td>
+      </tr>
+
+      <tr>
+        <td>VS Live Share</td>
+        <td>screen & chat</td>
+      </tr>
+
+      <tr>
+        <td>VS Live Share Audio</td>
+        <td>audio</td>
+      </tr>
+
+      <tr>
+        <td>VSCODE-styled-components Julien Poissonnier</td>
+        <td>highlights styled component syntax</td>
+      </tr>
+
+      <tr>
+        <td>Git Lens – Eric Amodio</td>
+        <td>easily visualize git changes</td>
+      </tr>
+
+      <tr>
+        <td>Auto Rename Tag – Jun Han</td>
+        <td>rename tag</td>
+      </tr>
+
+      <tr>
+        <td>Markdown Preview Enhanced – Yiyi Wang</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Styled Components Snippets – Daniel Sousa</td>
+        <td>styled commponents snippets</td>
+      </tr>
+
+      <tr>
+        <td>Styled-Components Extractor- FallenMax</td>
+        <td>extract tag names, so they are imported to the .js file</td>
+      </tr>
+
+      <tr>
+        <td>peackock – john papa (colores)</td>
+        <td>windows collors</td>
+      </tr>
+
+      <tr>
+        <td>font awesome auto-complete & Preview – jane 252</td>
+        <td>font awesome snippets</td>
+      </tr>
+
+      <tr>
+        <td>vim – vscodevim</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>HTML Snippets – Mohamed Abusaid</td>
+        <td>html snippets</td>
+      </tr>
+
+      <tr>
+        <td>Auto Close Tag – Jun Han</td>
+        <td>closes tags</td>
+      </tr>
+
+      <tr>
+        <td>Css Peek</td>
+        <td>css preview on html</td>
+      </tr>
+
+      <tr>
+        <td>Docker</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Draw.io Integration</td>
+        <td>diagrams, svg or png files</td>
+      </tr>
+
+      <tr>
+        <td>Draw.io Preview</td>
+        <td>draw preview</td>
+      </tr>
+
+      <tr>
+        <td>Emmet Live</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>NPM – egamma</td>
+        <td>validates package json dependencies</td>
+      </tr>
+
+      <tr>
+        <td>Duplicate action – mrmlnc</td>
+        <td>dupplicates a file</td>
+      </tr>
+
+      <tr>
+        <td>Autoprefixer</td>
+        <td>add vendors prefixer css for animations & transitions</td>
+      </tr>
+
+      <tr>
+        <td>Power Mode – Cody Hoover</td>
+        <td>shows where you re typing</td>
+      </tr>
+
+      <tr>
+        <td>SVG Coding, Minify, Pretty, Preview All-In One</td>
+        <td>SVG preview</td>
+      </tr>
+
+      <tr>
+        <td>Code Spell Checker</td>
+        <td>check grammar</td>
+      </tr>
+      <tr>
+        <td>Zoom Bar</td>
+        <td>adds a zoom bar in status bar</td>
+      </tr>
+      <tr>
+        <td>jQuery Code Snippets</td>
+        <td>snnippets for jquery <small>(jq+letter)</small></td>
+      </tr>
+      <tr>
+        <td>NPM Intellisense – christian-kohler.npm-intellisense</td>
+        <td>intelicense for npm</td>
+      </tr>
+    </table>
+  </body>
+</html>
